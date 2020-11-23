@@ -247,7 +247,7 @@ $(".open-resume").on("click", (event) => {
     $(".modal-overlay .loader").css("display", "none");
 });
 
-
+// Close modal
 function closeModal() {
     $(".modal-overlay").css("display", "none");
     $(".modal-overlay-content").html("");

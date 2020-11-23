@@ -114,9 +114,7 @@ body {
 /* Banner */
 
 .banner {
-    padding-top: 100vh;
-    padding-bottom: 88.88px;
-    min-height: 100%;
+    height: calc(100vh + 88.88px);
     background-image: url("../images/banner-image.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -130,7 +128,7 @@ body {
 .banner-img2 {
     position: absolute;
     top: 0;
-    min-height: calc(100vh + 88.88px);
+    height: calc(100vh + 88.88px);
     width: 100%;
     background-image: url("../images/banner-image2.jpg");
     -webkit-background-size: cover;

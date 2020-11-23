@@ -1,3 +1,5 @@
+
+
 // Checks if ABOUT is clicked
 $(".about-btn").on("click", (event) => {
     event.preventDefault();
@@ -31,3 +33,4 @@ $(".home-btn").on("click", (event) => {
         scrollTop: 0
     }, 1000);
 })
+
