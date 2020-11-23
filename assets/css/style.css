@@ -1,0 +1,455 @@
+/* Body */
+
+body {
+    background-color: rgb(40, 40, 40, 1);
+}
+
+/* Titles */
+
+.title {
+    text-align: center;
+    color: #282828;
+    font-size: 40px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.title-small {
+    font-size: 15px;
+}
+
+/* Overlay */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 0.5;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* labels */
+
+.label {
+    text-align: center;
+}
+
+.label-icon {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    border-radius: 50%;
+    background-color: #0097de;
+    height: 85px;
+    width: 85px;
+    margin-bottom: 20px;
+}
+
+.label-icon i {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+/* Banner */
+
+.banner {
+    padding-top: 100vh;
+    padding-bottom: 88.88px;
+    min-height: 100%;
+    background-image: url("../images/banner-image.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: black;
+}
+
+.banner-img2 {
+    position: absolute;
+    top: 0;
+    min-height: calc(100vh + 88.88px);
+    width: 100%;
+    background-image: url("../images/banner-image2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.banner-title {
+    position: absolute;
+    top: 25%;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-name {
+    color: rgb(0, 140, 255)
+}
+
+.banner-title h1 {
+    color: white;
+}
+
+.view-work {
+    position: absolute;
+    top: calc(100vh - 400px);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.view-wrok-btn {
+    margin-top: 50px;
+    z-index: 3;
+}
+
+.typewrite {
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* .design-code {
+    padding-top: 50px;
+    font-size: 30px;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design-code .left {
+    float: left;
+}
+
+.design-code .right {
+    float: right;
+} */
+
+/* Navbar */
+
+.nav-custom {
+    background-color: rgb(40, 40, 40, 1);
+    z-index: 3;
+}
+
+.nav-scroll {
+    margin-top: -88.88px;
+    background-color: rgb(1, 1, 1, 0);
+}
+
+.nav-align {
+    padding-left: 15%;
+}
+
+.nav-scroll-offset {
+    margin-top: 88.88px;
+}
+
+/* About */
+
+.aboutme {
+    padding-top: 60px;
+    background-color: white
+}
+
+.aboutme-labels {
+    padding-top: 80px;
+}
+
+/* Bio */
+
+.bio {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.bio-img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.bio-text {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    font-size: 15px;
+    color: rgb(40, 40, 40, 1);
+}
+
+.bio-text a {
+    color: #0097de;
+}
+
+.bio-progress-bar {
+    text-align: left;
+    color: rgb(40, 40, 40, 1);
+}
+
+.bio .progress {
+    background: rgb(216, 216, 216);
+}
+
+.bio .progress-bar {
+    background: #0097de
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.portfolio .title {
+    color: white;
+    padding-bottom: 40px;
+}
+
+.portfolio-active {
+    background: #0097de;
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+.portfolio a {
+    font-size: 15px;
+}
+
+.portfolio-overlay {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.portfolio-links {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-overlay:hover {
+    opacity: 1;
+}
+
+.portfolio-links .btn {
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100px;
+}
+
+.portfolio-overlay h2 {
+    padding-top: 25%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* design */
+
+.design {
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+
+.design .title {
+    color: white;
+    padding-bottom: 40px;
+}
+
+.media-img {
+    width: 100%;
+}
+
+.media-grid {
+    padding-bottom: 75px;
+}
+
+/* Video */
+
+.video-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Brands */
+
+.brands {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.brands img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.brands h1 {
+    color: rgb(40, 40, 40, 1);
+    padding-bottom: 20px;
+}
+
+/* Contact */
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.contact h1 {
+    padding-bottom: 60px;
+}
+
+/* Modal */
+
+.modal-overlay-content {
+    text-align: center;
+}
+
+.modal-overlay-content iframe {
+    padding: 20px;
+    margin: 0px;
+    border: 0;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    position: fixed;
+    min-width: 0px;
+    max-width: none;
+    min-height: 0px;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 4;
+}
+
+.modal-overlay-content img {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    max-width: 100%;
+    max-height: calc(100vh - 40px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.modal-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+.modal-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    z-index: 5;
+    color: white;
+    text-decoration: none;
+}
+
+/* Resume */
+
+.resume-container {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 20px;
+    width: 100%;
+    height: calc(100vh - 20px);
+}
+
+/* Footer */
+
+.footer-container {
+    padding-top: 60px;
+    background-color: rgb(240, 240, 240);
+}
+
+@media screen and (max-width: 767px) {
+    .view-work {
+        top: calc(100vh - 400px);
+    }
+    .banner-title {
+        top: 30%;
+    }
+    .banner-title h1 {
+        font-size: 6vmin;
+    }
+    .typewrite {
+        font-size: 3vmin;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .animatedunderlinemenu a {
+        font-size: 10px;
+    }
+}
