@@ -1,49 +1,55 @@
 //Projects
 const projects = [
     {
+        id: "TBWG",
         name: "The Bodyweight Gym",
         description: "Workout web application that helps users with their at home workout routines.",
-        thumbnail: "./assets/images/projects/TBWGO.png",
+        thumbnail: "./assets/images/projects/TBWGO.jpg",
         url: "https://markwilson107.github.io/The-Bodyweight-Gym-Online/",
         github: "https://github.com/markwilson107/The-Bodyweight-Gym-Online",
         category: ["group", "javascript", "html", "css"]
     },
     {
+        id: "NT",
         name: "Note Taker",
         description: "Taking notes and having them accessible from anywhere.",
-        thumbnail: "./assets/images/projects/NT.png",
+        thumbnail: "./assets/images/projects/NT.jpg",
         url: "https://note-taker-markwilson.herokuapp.com/",
         github: "https://github.com/markwilson107/Note-Taker",
         category: ["javascript", "html", "css", "nodejs"]
     },
     {
+        id: "ET",
         name: "Employee Tracker",
         description: "Keep track of your employees, roles and departments.",
-        thumbnail: "./assets/images/projects/ET.png",
+        thumbnail: "./assets/images/projects/ET.jpg",
         url: "https://drive.google.com/file/d/1SNH7v3Mw-aq_yYxDJUPEf9LXQEMAS9xk/view?usp=sharing",
         github: "https://github.com/markwilson107/Employee-Tracker",
         category: ["javascript", "nodejs"]
     },
     {
+        id: "WD",
         name: "Weather Dashboard",
         description: "Weather dashboard demonstrating the use of APIs.",
-        thumbnail: "./assets/images/projects/WD.png",
+        thumbnail: "./assets/images/projects/WD.jpg",
         url: "https://markwilson107.github.io/Weather-Dashboard/",
         github: "https://github.com/markwilson107/Weather-Dashboard",
         category: ["javascript", "html", "css", "api"]
     },
     {
+        id: "WDP",
         name: "Work Day Planner",
         description: "Work day planner for the user to organise their day hour by hour.",
-        thumbnail: "./assets/images/projects/WDS.png",
+        thumbnail: "./assets/images/projects/WDS.jpg",
         url: "https://markwilson107.github.io/Work-Day-Scheduler/",
         github: "https://github.com/markwilson107/Work-Day-Scheduler",
         category: ["javascript", "html", "css"]
     },
     {
+        id: "PG",
         name: "Password Generator",
         description: "Random password generator created using HTML, CSS, and Javascript.",
-        thumbnail: "./assets/images/projects/PG.png",
+        thumbnail: "./assets/images/projects/PG.jpg",
         url: "https://markwilson107.github.io/Password-Generator/",
         github: "https://github.com/markwilson107/Password-Generator",
         category: ["javascript", "html", "css"]
@@ -115,7 +121,7 @@ const video = [
 let newGrid = [];
 for (var i = 0; i < projects.length; i++) {
     let $col = $("<div>");
-    $col.addClass(`col-md-4`);
+    $col.addClass(`col-md-4 gridId-${projects[i].id}`);
     $col.html(`<img src="${projects[i].thumbnail}" class="portfolio-img" /><div class="portfolio-overlay">
     <h2>${projects[i].name}</h2>
     <div class="portfolio-links">
@@ -129,14 +135,14 @@ $(".portfolio-grid").append(newGrid);
 
 // Filter portfolio grid
 function filterPortfolio(filter) {
-    $(".portfolio-grid").fadeOut(400, function () {
+    $(".portfolio-grid").fadeOut(200, function () {
         for (var i = 0; i < projects.length; i++) {
             if (projects[i].category.includes(filter) || filter === "all") {
                 $(`.gridId-${projects[i].id}`).css("display", "block");
             } else {
                 $(`.gridId-${projects[i].id}`).css("display", "none");
             }
-            $(".portfolio-grid").fadeIn(400);
+            $(".portfolio-grid").fadeIn(200);
         }
     });
 }
@@ -197,6 +203,7 @@ $(".media-grid").append(newGrid);
 $(".media-container .overlay").on("click", function (event) {
     $(".modal-overlay-content").html(`<img src="${$(this).attr("data")}">`);
     $(".modal-overlay").css("display", "block");
+    $(".modal-overlay").addClass("modal-zoom");
 });
 
 // Video
@@ -218,6 +225,7 @@ $(".video-container .overlay").on("click", function (event) {
     $(".modal-overlay-content").html(`<iframe src="${$(this).attr("data")}" frameborder="0" allow="autoplay; fullscreen"
     allowfullscreen></iframe>`);
     $(".modal-overlay").css("display", "block");
+    $(".modal-overlay").addClass("modal-zoom");
 });
 
 // View my work check

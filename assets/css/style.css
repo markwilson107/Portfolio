@@ -2,6 +2,7 @@
 
 body {
     background-color: rgb(40, 40, 40, 1);
+    overflow-x: hidden;
 }
 
 /* Titles */
@@ -16,6 +17,45 @@ body {
 
 .title-small {
     font-size: 15px;
+}
+
+/* Loader */
+
+.loader {
+    border: 16px solid #ffffff;
+    border-radius: 50%;
+    border-top: 16px solid #343a40;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    
+}
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Overlay */
@@ -122,14 +162,13 @@ body {
 
 .view-work {
     position: absolute;
-    top: calc(100vh - 400px);
+    top: calc(100vh - 500px);
     color: white;
     text-align: center;
     width: 100%;
 }
 
 .view-wrok-btn {
-    margin-top: 50px;
     z-index: 3;
 }
 
@@ -356,7 +395,21 @@ body {
 
 .modal-overlay-content {
     text-align: center;
+    transform-origin: left top;
+  
 }
+.modal-zoom {
+animation: zoom 0.2s ease-in-out forwards;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
 
 .modal-overlay-content iframe {
     padding: 20px;
@@ -390,6 +443,7 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 .modal-overlay {
@@ -429,12 +483,12 @@ body {
 
 .footer-container {
     padding-top: 60px;
-    background-color: rgb(240, 240, 240);
+    background-color: white;
 }
 
 @media screen and (max-width: 767px) {
     .view-work {
-        top: calc(100vh - 400px);
+        top: calc(100vh - 500px);
     }
     .banner-title {
         top: 30%;
@@ -448,8 +502,46 @@ body {
     .title {
         font-size: 30px;
     }
-
+    .title-small {
+        font-size: 10px;
+    }
     .animatedunderlinemenu a {
         font-size: 10px;
     }
+}
+
+@media screen and (min-height: 1200px) {
+    .view-work {
+        top: calc(100vh - 600px);
+        }
+        .typewrite {
+            padding-bottom: 20px;
+        }    
+}
+
+@media screen and (max-height: 800px) {
+    .view-work {
+        top: calc(100vh - 400px);
+        }
+        .typewrite {
+            padding-bottom: 20px;
+        }    
+}
+
+@media screen and (max-height: 600px) {
+    .view-work {
+        top: calc(100vh - 320px);
+        }
+        .typewrite {
+            padding-bottom: 20px;
+        }    
+}
+
+@media screen and (max-height: 400px) {
+    .view-work {
+        top: calc(100vh - 250px);
+        }
+        .typewrite {
+            padding-bottom: 20px;
+        }    
 }
