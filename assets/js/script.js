@@ -244,11 +244,13 @@ $(".open-resume").on("click", (event) => {
     <p>Oops! Your browser doesn't support PDFs!</p>
     <p><a style="color: white;" href="./assets/pdf/RESUME2020-MarkWilson.pdf">Download Instead</a></p></object>`);
     $(".modal-overlay").css("display", "block");
+    $(".modal-overlay .loader").css("display", "none");
 });
 
 
 function closeModal() {
     $(".modal-overlay").css("display", "none");
     $(".modal-overlay-content").html("");
+    $(".modal-overlay .loader").css("display", "block");
 }
 

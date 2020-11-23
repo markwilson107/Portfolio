@@ -1,7 +1,3 @@
-$(document).ready(() => {
-    $(".slideInLeft").css("left", "0px");
-})
-
 $('.view-work-btn').hover(function(){
     let mobile = window.matchMedia("(min-width: 767px)")
     let supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;

@@ -349,7 +349,7 @@ body {
 }
 
 .media-grid {
-    padding-bottom: 75px;
+    padding-bottom: 150px;
 }
 
 /* Video */
@@ -389,6 +389,11 @@ body {
 
 .contact h1 {
     padding-bottom: 60px;
+}
+
+#submit-btn {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Modal */
@@ -477,6 +482,7 @@ animation: zoom 0.2s ease-in-out forwards;
     padding-top: 20px;
     width: 100%;
     height: calc(100vh - 20px);
+    z-index: 5;
 }
 
 /* Footer */
@@ -484,6 +490,7 @@ animation: zoom 0.2s ease-in-out forwards;
 .footer-container {
     padding-top: 60px;
     background-color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
