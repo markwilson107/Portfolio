@@ -3,7 +3,7 @@ $(".about-btn").on("click", (event) => {
     event.preventDefault();
     // scrolls to about me element
     $('html, body').animate({
-        scrollTop: $(".aboutme").offset().top-87
+        scrollTop: $(".aboutme").offset().top - 87
     }, 1000);
 })
 // Checks if PROJECTS is clicked
@@ -19,7 +19,7 @@ $(".contact-btn").on("click", (event) => {
     event.preventDefault();
     // scrolls to contact element
     $('html, body').animate({
-        scrollTop: $(".contact").offset().top-87
+        scrollTop: $(".contact").offset().top - 87
     }, 1000);
 })
 

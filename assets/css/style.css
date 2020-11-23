@@ -266,13 +266,12 @@ body {
 /* Portfolio */
 
 .portfolio {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 90px;
 }
 
 .portfolio .title {
     color: white;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
 }
 
 .portfolio-active {
@@ -335,13 +334,13 @@ body {
 /* design */
 
 .design {
-    padding-top: 60px;
-    padding-bottom: 150px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .design .title {
     color: white;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
 }
 
 .media-img {
@@ -349,7 +348,7 @@ body {
 }
 
 .media-grid {
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 }
 
 /* Video */
@@ -362,8 +361,7 @@ body {
 /* Brands */
 
 .brands {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 75px;
     text-align: center;
     background-color: rgb(240, 240, 240);
 }
@@ -381,7 +379,7 @@ body {
 /* Contact */
 
 .contact {
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 60px;
     background-color: rgb(240, 240, 240);
     color: black;
@@ -403,9 +401,11 @@ body {
     transform-origin: left top;
   
 }
+
 .modal-zoom {
 animation: zoom 0.2s ease-in-out forwards;
 }
+
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
