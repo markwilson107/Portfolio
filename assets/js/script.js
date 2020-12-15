@@ -1,6 +1,15 @@
 //Projects
 const projects = [
     {
+        id: "DS",
+        name: "TCWA - Direct Ship",
+        description: "Made for Trucking Centre Western Australia, used to help staff keep track of requests sent from remote branches to the main warehouse.",
+        thumbnail: "./assets/images/projects/DS.jpg",
+        url: "https://direct-ship.herokuapp.com/signin",
+        github: "https://github.com/markwilson107/Direct-Ship",
+        category: ["group", "javascript", "html", "css", "nodejs"]
+    },
+    {
         id: "TBWG",
         name: "The Bodyweight Gym",
         description: "Workout web application that helps users with their at home workout routines.",
@@ -36,15 +45,15 @@ const projects = [
         github: "https://github.com/markwilson107/Weather-Dashboard",
         category: ["javascript", "html", "css", "api"]
     },
-    {
-        id: "WDP",
-        name: "Work Day Planner",
-        description: "Work day planner for the user to organise their day hour by hour.",
-        thumbnail: "./assets/images/projects/WDS.jpg",
-        url: "https://markwilson107.github.io/Work-Day-Scheduler/",
-        github: "https://github.com/markwilson107/Work-Day-Scheduler",
-        category: ["javascript", "html", "css"]
-    },
+    // {
+    //     id: "WDP",
+    //     name: "Work Day Planner",
+    //     description: "Work day planner for the user to organise their day hour by hour.",
+    //     thumbnail: "./assets/images/projects/WDS.jpg",
+    //     url: "https://markwilson107.github.io/Work-Day-Scheduler/",
+    //     github: "https://github.com/markwilson107/Work-Day-Scheduler",
+    //     category: ["javascript", "html", "css"]
+    // },
     {
         id: "PG",
         name: "Password Generator",
