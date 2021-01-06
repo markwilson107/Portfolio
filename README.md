@@ -16,7 +16,7 @@ A single page portfolio displaying work from Mark Wilson.
 
 ## Contributing
 
-This project is not open to contribution.
+Feedback is always welcome.
 
 ## Questions
 
